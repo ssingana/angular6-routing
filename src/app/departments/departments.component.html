@@ -1,0 +1,15 @@
+<h3>Departments List</h3>
+
+
+<div class="row">
+    <div class="col-4">
+        <ul class="list-group">
+            <li *ngFor="let dept of depts" (click)="showDeptDetails(dept)">
+                <span class="badge badge-secondary">{{dept.id}}</span> {{dept.name}}
+            </li>
+        </ul>
+    </div>
+    <div class="col-8">
+        <app-departmentdetails></app-departmentdetails>
+    </div>
+</div>
