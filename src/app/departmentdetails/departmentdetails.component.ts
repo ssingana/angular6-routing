@@ -33,6 +33,7 @@ this.rounter.navigate(['/departments',prevId]);
   }
 
   back(){
+    throw new Error('Something bad happened');
     let prevId = this.deptId + 1;
 this.rounter.navigate(['../',{id : prevId}], {relativeTo : this.activatedRoute});
   }
