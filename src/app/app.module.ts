@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Ng5BreadcrumbModule, BreadcrumbService} from 'ng5-breadcrumb';
 
 import { AppComponent } from './app.component';
 import { routingComponents, AppRoutingModule } from './app.routing.module';
@@ -12,9 +13,10 @@ import { routingComponents, AppRoutingModule } from './app.routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng5BreadcrumbModule
   ],
-  providers: [],
+  providers: [BreadcrumbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
