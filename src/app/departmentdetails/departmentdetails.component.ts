@@ -15,10 +15,11 @@ export class DepartmentdetailsComponent implements OnInit {
     // let id = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
     // this.deptId = id;
     // console.log("Selected Department id " + id);
-
+    
     this.activatedRoute.paramMap.subscribe((params : ParamMap)=>{
       let id = parseInt(params.get('id'));
       this.deptId=id;
+      console.log(" Id value : ================= : " + id);
     });
   }
   previous(){
