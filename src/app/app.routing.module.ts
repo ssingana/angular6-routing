@@ -19,12 +19,13 @@ const routes: Routes = [
             { path: 'idc', component: IdcemployeesComponent },
             { path: 'onsite', component: OnsiteemployeesComponent },
             { path: 'offshore', component: OffshoreemployeesComponent }
-        ]
+        ], 
+        data : { breadcrumb : 'Employees'}
     },
-    { path: 'departments', component: DepartmentsComponent },
-    { path: 'departments/:id', component: DepartmentdetailsComponent },
-    { path: 'countries', component: CountriesComponent },
-    { path: 'jobs', component: JobsComponent },
+    { path: 'departments', component: DepartmentsComponent, data : { breadcrumb : 'Departments'} },
+    { path: 'departments/:id', component: DepartmentdetailsComponent, data : { breadcrumb : 'DeptDetails'} },
+    { path: 'countries', component: CountriesComponent, data : { breadcrumb : 'Countries'} },
+    { path: 'jobs', component: JobsComponent, data : { breadcrumb : 'Jobs'} },
     { path: "**", component: PageNotFoundComponent }
 ];
 
